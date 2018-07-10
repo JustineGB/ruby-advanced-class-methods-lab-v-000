@@ -64,11 +64,14 @@ class Song
 
 
   def self.new_from_filename(name, artist_name)
+    #need to separate out the words within the string
+    #chomp of the end?
+    self.each do |name, artist_name|
     song = self.new_from_filename(name, artist_name).chomp
-    song.name = name
-    artist_name.name = name
-    song
+    song.name = name.to_s
+    artist_name.name = name.to_s
   end
+end
 
   def self.destroy_all
     self.all.clear
