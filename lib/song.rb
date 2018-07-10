@@ -65,7 +65,7 @@ class Song
 
   def self.new_from_filename(filename)
 #      split = filename.chop.chop.chop.chop.split(" - ]")
-      split_filename = filename.chomp(".mp3").split{" - ")
+      split_filename = filename.chop(".mp3").split{" - ")
 
 #    self.split(" ")
 #    self.each do |name, artist_name|
