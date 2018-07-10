@@ -53,12 +53,12 @@ class Song
     #  return self.create_by_name(name)
   self.find_by_name(name) ?   self.find_by_name(name) : create_by_name(name)
     end
-
+end
 
   def self.alphabetical(name)
     #assume info is already stored in the array?!
-    self.create_by_name(name)
-    song.sort!
+    self.find_by_name(name) ?   self.find_by_name(name) : create_by_name(name)
+    return self.sort
   end
 
   def self.new_from_filename(name, artist_name)
