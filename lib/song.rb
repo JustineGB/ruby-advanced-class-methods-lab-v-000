@@ -55,9 +55,9 @@ class Song
     end
 
 
-  def self.alphabetical(name)
-    #need to create and save these instances by name into the array and then alphabetize!!!!!!
-    @@all.sort { |a,b| a.name <=> b.name } #I don't understand this!?!?!?!?!?!?!?
+  def self.alphabetical
+#do NOT need to pass an argument in here bc we are looking at the @@all array that has already had values inside of it (maybe) depending on the previous methods in this class?
+   @@all.sort { |1,2| 1.name <=> 2.name } #this is calling sort on the @@all array and saying look at the values a,b and if a.name 
   end
 
   def self.new_from_filename(name, artist_name)
