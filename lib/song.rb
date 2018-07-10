@@ -18,7 +18,7 @@ class Song
   end
 
   def self.create
-    #class method (not just calling on particular instance, method for entire class)???
+    #class method, saves all of the instances
     song = self.new
     song.save
     song
@@ -57,7 +57,7 @@ class Song
 
   def self.alphabetical(name)
     #assume info is already stored in the array?!
-    self.create_by_name.sort(name)
+    self.create_by_name(name).sort
   end
 
   def self.new_from_filename(name, artist_name)
@@ -71,6 +71,5 @@ class Song
   def self.destroy_all
     self.all.clear
   end
-
 
 end
