@@ -57,8 +57,8 @@ class Song
 
   def self.alphabetical
 #do NOT need to pass an argument in here bc we are looking at the @@all array that has already had values inside of it (maybe) depending on the previous methods in this class?
-   @@all.sort { |name,new_name| name.name <=> new_name.name }
-   #this is calling sort on the @@all array and saying look at the values a,b and if a.name
+   @@all.sort { |a,b| a.name <=> b.name }
+   #this is calling sort on the @@all array and saying look at the values in position a and b and compare (<=>) if A is before B, move to the front of the array, etc. (Alphabetize)
   end
 end
 
