@@ -73,7 +73,7 @@ class Song
       song
     end
 
-def self.create_from_filename
+def self.create_from_filename(filename)
   new_from_filename = filename.chomp(".mp3").split(" - ")
   song = Song.new
   song.name = new_from_filename[1]
