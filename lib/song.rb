@@ -55,8 +55,9 @@ class Song
     end
 
 
-  def self.alphabetical
-    @@all.sort
+  def self.alphabetical(name)
+    #assume info is already stored in the array?!
+    self.create_by_name.sort(name)
   end
 
   def self.new_from_filename(name, artist_name)
