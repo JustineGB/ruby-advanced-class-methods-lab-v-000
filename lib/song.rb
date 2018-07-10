@@ -64,8 +64,10 @@ class Song
 
 
   def self.new_from_filename(filename)
-#
+      #take in the argument of filename (a string with song name artist and mp3 at end. chomp off mps and split name and artist)
       new_from_filename = filename.chomp(".mp3").split(" - ")
+      song.name = name
+      artist_name.name = artist_name
 
 #    self.split(" ")
 #    self.each do |name, artist_name|
