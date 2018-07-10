@@ -55,7 +55,7 @@ class Song
     end
 
 
-  def self.alphabetical(name)
+  def self.alphabetical
     #need to create and save these instances by name into the array and then alphabetize!!!!!!
   @@all.self.sort {|name| return name}
   end
