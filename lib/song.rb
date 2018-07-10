@@ -51,9 +51,9 @@ class Song
       #if that name does not exist (i.e. you do NOT find it) then you need to create it!
 #    else self.create_by_name(name) #you must call self. to let the program know WHO/WHAT you are calling this method on.
     #  return self.create_by_name(name)
-  self.find_by_name(name) ? name : create_by_name(name)  
+  self.find_by_name(name) ? name : create_by_name(name)
     end
-  end
+
 
   def self.alphabetical
     @@all.sort
