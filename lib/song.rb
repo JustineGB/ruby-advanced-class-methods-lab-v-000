@@ -68,7 +68,7 @@ class Song
       new_from_filename = filename.chomp(".mp3").split(" - ")
       song = Song.new #create new instance of the song class
       song.name = new_from_filename[1] #song name comes from 2nd position
-      song.artist_name = ew_from_filename[0]
+      song.artist_name = new_from_filename[0]
       song
     end
       # this will return a new variale (new_from_filename) the has the string with the mp3 end chomped off and it is split btw the - divider
