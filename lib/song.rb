@@ -57,7 +57,7 @@ class Song
 
   def self.alphabetical
     #need to create and save these instances by name into the array and then alphabetize!!!!!!
-  @@all.self.sort
+    @@all.sort
   end
 
   def self.new_from_filename(name, artist_name)
