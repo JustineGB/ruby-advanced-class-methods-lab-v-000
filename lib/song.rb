@@ -57,7 +57,8 @@ class Song
 
   def self.alphabetical
 #do NOT need to pass an argument in here bc we are looking at the @@all array that has already had values inside of it (maybe) depending on the previous methods in this class?
-   @@all.sort { |1,2| 1.name <=> 2.name } #this is calling sort on the @@all array and saying look at the values a,b and if a.name 
+   @@all.sort { |1,2| 1.name <=> 2.name }
+   #this is calling sort on the @@all array and saying look at the values a,b and if a.name 
   end
 
   def self.new_from_filename(name, artist_name)
