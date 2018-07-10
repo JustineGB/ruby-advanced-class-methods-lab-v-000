@@ -70,8 +70,7 @@ class Song
       puts aritst_name.last
     end
       # this will return a new variale (new_from_filename) the has the string with the mp3 end chomped off and it is split btw the - divider
-      song.name = name
-      artist_name.name = artist_name
+
 
 
 
