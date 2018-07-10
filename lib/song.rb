@@ -49,7 +49,7 @@ class Song
       return find_by_name(name)
       #if that name does not exist (i.e. you do NOT find it) then you need to create it!
     else create_by_name(name)
-      return create_by_name(name)
+      return Song
     end
   end
 
