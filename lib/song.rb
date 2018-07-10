@@ -64,11 +64,10 @@ class Song
 
 
   def self.new_from_filename(name, artist_name)
-    song = self.new
+    song = self.new_from_filename(name, artist_name).chomp
     song.name = name
     artist_name.name = name
-    name.save
-    name
+    song
   end
 
   def self.destroy_all
