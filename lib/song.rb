@@ -62,7 +62,6 @@ class Song
    self.sort_by do |song|
     song[:name]
 end
-puts(@@all)
   end
 
 
