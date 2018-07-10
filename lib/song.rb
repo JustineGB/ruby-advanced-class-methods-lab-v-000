@@ -45,10 +45,10 @@ class Song
   #pass in an argument of the song name
   #look into the array @@all to see if it is already included or not - call self.
   #just using the logic from the two previous methods. just utilze those other two methods you already set up!!!
-    if self.find_by_name(name) #if self (the class array) find_by_name = the name you pass into it exits  then return that name!
+    if find_by_name(name) #if self (the class array) find_by_name = the name you pass into it exits  then return that name!
       return find_by_name(name)
       #if that name does not exist (i.e. you do NOT find it) then you need to create it!
-    else self.create_by_name(name)
+    else create_by_name(name)
       return create_by_name(name)
     end
   end
