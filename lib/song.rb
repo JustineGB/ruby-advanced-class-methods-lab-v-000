@@ -54,11 +54,12 @@ end
     @@all.sort
   end
 
-  def self.new_from_filename(name)
+  def self.new_from_filename(name, artist_name)
     song = self.new
     song.name = name
-    song.save
-    song
+    artist_name.name = name
+    name.save
+    name
   end
 
   def self.destroy_all
