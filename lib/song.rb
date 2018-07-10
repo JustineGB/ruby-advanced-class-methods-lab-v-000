@@ -48,7 +48,7 @@ class Song
     if self.find_by_name(name) #if self (the class array) find_by_name = the name you pass into it exits  then return that name!
       #if that name does not exist (i.e. you do NOT find it) then you need to create it!
     else self.create_by_name(name) #you must call self. to let the program know WHO/WHAT you are calling this method on.
-      return self.create_by_name(name)
+    #  return self.create_by_name(name)
     end
   end
 
