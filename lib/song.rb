@@ -66,13 +66,12 @@ class Song
   def self.new_from_filename(filename)
       #take in the argument of filename (a string with song name artist and mp3 at end. chomp off mps and split name and artist)
       new_from_filename = filename.chomp(".mp3").split(" - ")
+      # this will return a new variale (new_from_filename) the has the string with the mp3 end chomped off and it is split btw the - divider
       song = Song.new #create new instance of the song class
       song.name = new_from_filename[1] #song name comes from 2nd position
       song.artist_name = new_from_filename[0]
       song
     end
-      # this will return a new variale (new_from_filename) the has the string with the mp3 end chomped off and it is split btw the - divider
-
 
 
 
